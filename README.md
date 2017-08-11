@@ -110,4 +110,4 @@ You're ready to go! Run any task by typing `npm run task` (where "task" is the n
 
 
 ## Need help?
-Feel free to [create an issue](http://github.com/damonbauer/npm-build-boilerplate/issues), [tweet me](http://twitter.com/damon_bauer), or [send me an email](mailto:hello@damonbauer.me). I'd be glad to help where I can!
+Feel free to [create an issue](https://github.com/clubjolly/npm-task-runner/issues), [tweet me](http://twitter.com/laphilosophias), or [send me an email](mailto:erdemarslan@ymail.com). I'd be glad to help where I can!
