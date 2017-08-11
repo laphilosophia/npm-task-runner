@@ -58,6 +58,11 @@ You're ready to go! Run any task by typing `npm run task` (where "task" is the n
 
   Compress separate SVG files and combine them into one SVG "sprite"
 
+### `pugtohtml`
+  `pug --output-style nested -o dist/template/ source/template/*.pug`
+
+  Render pug files to html format
+
 ### `serve`
   `browser-sync start --server --files 'dist/styles/*.css, dist/scripts/*.js, **/*.html, !node_modules/**/*.html'`
 
@@ -78,6 +83,11 @@ You're ready to go! Run any task by typing `npm run task` (where "task" is the n
 
   Alias to run the `imagemin` and `icons` tasks. Compresses images, generates an SVG sprite from a folder of separate SVGs
 
+### `build:pug`
+  `run-s pugtohtml`
+
+  Alias to run the `pugtohtml` tasks. Render pug file to html from a folder of separate templates
+
 ### `build`
   `run-s build:*`
 
@@ -97,6 +107,11 @@ You're ready to go! Run any task by typing `npm run task` (where "task" is the n
   `onchange 'source/images/**/*' -- run-s build:images`
 
   Watches for any images in `source` to change, then runs the `build:images` task
+
+### `watch:pug`
+  `onchange \"source/template/*.pug\" -- run-s build:pug`
+
+  Watches for any pugs in `source` to change, then runs the `build:pug` task
 
 ### `watch`
   `run-p serve watch:*`
